@@ -30,9 +30,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       width: 10rem;
       display: flex;
       justify-content: space-between;
-      @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-        width: 15rem;
-      }
+      color: #E9E5E3;
     }
   }
 `
@@ -42,7 +40,7 @@ const StyledLink = styled(Link)`
   font-weight: 700;
   text-transform: uppercase;
   color: ${({ theme, $darkMode }) =>
-    $darkMode ? theme.colors.primary : theme.colors.background};
+  $darkMode ? theme.colors.primary : theme.colors.background};
   letter-spacing: 1px;
 `
 
