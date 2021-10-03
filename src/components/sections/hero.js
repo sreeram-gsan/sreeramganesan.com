@@ -125,17 +125,16 @@ const Hero = ({ content }) => {
             {frontmatter.title}
           </h1>
           <h2 className="subtitle">
-            {frontmatter.subtitlePrefix}{" "}
-            <AnimatedUnderlining animate={uControls} big>
-              {frontmatter.subtitle}
-            </AnimatedUnderlining>
+            {frontmatter.subtitle}{" "} 
+            {/* {frontmatter.subtitle2}{" "} */}
+            
           </h2>
           <div className="description">
-            <MDXRenderer>{body}</MDXRenderer>
+            I am broadly interested in Computer Systems which includes Cloud Computing, Data-Intensive Systems and Backend Development. Previously, I was working as a Software Engineer at <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/index.html">Oracle</a> where I was building the awesome <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/industries/food-beverage/restaurant-pos-systems/restaurant-analytics/"> Reporting & Analytics </a>.
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
-          <Social fontSize=".95rem" padding=".3rem 1.25rem" width="auto" />
+          <Social fontSize=".95rem" padding=".3rem 1.25rem" width="auto" withIcon/>
         </motion.div>
       </StyledContentWrapper>
     </StyledSection>

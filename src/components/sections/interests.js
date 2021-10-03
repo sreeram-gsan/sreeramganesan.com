@@ -98,15 +98,12 @@ const StyledInterests = styled.div`
     width: 15.625rem;
     height: 3rem;
     display: flex;
-    justify-content: flex-start;
+    text-align: center;
     align-items: center;
     padding: 1rem;
     border: 0.125rem solid ${({ theme }) => theme.colors.primary};
     border-radius: ${({ theme }) => theme.borderRadius};
-    background: ${({ theme }) => theme.colors.card};
-    .icon {
-      margin-right: 0.5rem;
-    }
+    background: ${({ theme }) => theme.colors.background};
   }
 `
 
@@ -160,9 +157,11 @@ const Interests = ({ content }) => {
               key={key}
               custom={key}
               initial={{ opacity: 0, scaleY: 0 }}
-              animate={iControls}
+              animate={iControls}    
+              textAlign="center"    
+              alignItems="center"      
             >
-              <Img className="icon" fixed={icon.childImageSharp.fixed} /> {name}
+              {name}
             </motion.div>
           ))}
           {shownInterests < interests.length && (
@@ -170,7 +169,8 @@ const Interests = ({ content }) => {
               <Button
                 onClick={() => showMoreItems()}
                 type="button"
-                textAlign="left"
+                textAlign="center"
+
               >
                 + Load more
               </Button>
