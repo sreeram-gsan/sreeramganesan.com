@@ -1,2 +1,2 @@
-### Personal website - 
+### Personal website 
 #### Hosted at https://sreeramganesan.com
