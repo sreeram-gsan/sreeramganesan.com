@@ -85,11 +85,6 @@
     "test:e2e": "start-server-and-test develop http://localhost:9000 cy:open",
     "test:e2e:ci": "start-server-and-test serve http://localhost:9000 cy:run"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal"
