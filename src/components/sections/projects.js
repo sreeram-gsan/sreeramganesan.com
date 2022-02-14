@@ -305,14 +305,14 @@ const Projects = ({ content }) => {
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
                         >
-                          <Icon
+                          <Button
                             name="github"
                             color={
                               darkMode
                                 ? darkTheme.colors.subtext
                                 : lightTheme.colors.subtext
                             }
-                          />
+                          ><center>View Project</center></Button>
                         </a>
                       )}
                       {frontmatter.external && (
@@ -322,14 +322,14 @@ const Projects = ({ content }) => {
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
                         >
-                          <Icon
+                          <Button
                             name="external"
                             color={
                               darkMode
                                 ? darkTheme.colors.subtext
                                 : lightTheme.colors.subtext
                             }
-                          />
+                          ><center>View Project</center></Button>
                         </a>
                       )}
                     </div>
