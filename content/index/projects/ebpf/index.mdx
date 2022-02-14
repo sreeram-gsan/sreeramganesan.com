@@ -1,0 +1,16 @@
+---
+title: "Efficient data processing using eBPF XDP"
+category: "Data Processing"
+emoji: "📊"
+screenshot: "./architecture.png"
+github: "https://github.com/sreeram-gsan/Efficient-Data-Processing-Using-eBPF"
+external: ""
+tags:
+  - Data Processing
+  - Cloud Computing
+visible: true
+position: 1
+---
+Existing data-processing systems like Databases and Spark clusters process data at the application layer.  There is a cost to move the data from the file system to the application layer to process them. This project achieved better performance compared to the existing data-processing systems by processing data at the network layer instead of the application layer.  This was done by injecting rules using eBPF at the XDP layer (which is at the kernel level) before the data packets are passed to the application layer.
+
+Tech Stack - Go, eBPF, XDP, Redis, Kafka, Docker, Kubernetes.
