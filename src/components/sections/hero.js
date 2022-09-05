@@ -130,7 +130,7 @@ const Hero = ({ content }) => {
             
           </h2>
           <div className="description">
-            I am broadly interested in cloud computing and building scalable systems. I also enjoy prototyping new ideas and building web applications. I am currently interning at <a style={{textDecoration: 'underline'}} href="https://cloud.google.com/billing/docs">Google Cloud</a>. Before joining CU, I worked as a Software Engineer at <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/index.html">Oracle</a> where I was building the awesome <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/industries/food-beverage/restaurant-pos-systems/restaurant-analytics/"> Reporting & Analytics </a>.
+            I am broadly interested in cloud computing and building scalable systems. I also enjoy prototyping new ideas and building web applications. I am currently interning at <a style={{textDecoration: 'underline'}} href="https://cloud.google.com/channel/docs/rebilling/rebilling-overview">Google Cloud</a>. Before joining CU, I worked as a Software Engineer at <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/index.html">Oracle</a> where I was building the awesome <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/industries/food-beverage/restaurant-pos-systems/restaurant-analytics/"> Reporting & Analytics </a>.
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
