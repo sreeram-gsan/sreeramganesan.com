@@ -58,7 +58,7 @@ const Footer = () => {
           />
         </Link>
         <div className="footer-links">
-          Copyright &copy; 2021 Sreeram Ganesan
+          Copyright &copy; 2022 Sreeram Ganesan
         </div>
       </StyledContentWrapper>
     </StyledFooter>
