@@ -91,9 +91,8 @@ const Hero = ({ content }) => {
         })
         // Animate underlining to hover state
         await uControls.start({
-          boxShadow: `inset 0 -2rem 0 ${
-            darkMode ? darkTheme.colors.secondary : lightTheme.colors.secondary
-          }`,
+          boxShadow: `inset 0 -2rem 0 ${darkMode ? darkTheme.colors.secondary : lightTheme.colors.secondary
+            }`,
           transition: { delay: 0.4, ease: "circOut" },
         })
       }
@@ -125,16 +124,20 @@ const Hero = ({ content }) => {
             {frontmatter.title}
           </h1>
           <h2 className="subtitle">
-            {frontmatter.subtitle}{" "} 
+            {frontmatter.subtitle}{" "}
             {/* {frontmatter.subtitle2}{" "} */}
-            
+
           </h2>
           <div className="description">
-            I am broadly interested in cloud computing and building scalable systems. I also enjoy prototyping new ideas and building web applications. I am currently interning at <a style={{textDecoration: 'underline'}} href="https://cloud.google.com/channel/docs/rebilling/rebilling-overview">Google Cloud</a>. Before joining CU, I worked as a Software Engineer at <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/index.html">Oracle</a> where I was building the awesome <a style={{textDecoration: 'underline'}} href="https://www.oracle.com/industries/food-beverage/restaurant-pos-systems/restaurant-analytics/"> Reporting & Analytics </a>.
+            I am broadly interested in cloud computing and building scalable systems. 
+            I also enjoy prototyping new ideas and building web applications.
+            I am a graduate teaching assistant for <a style={{ textDecoration: 'underline' }} href="https://classes.colorado.edu/?keyword=Design%20and%20Analysis%20of%20Operating%20Systems&subject=CSCI&camp=BLDR">Design and Analysis of Operating Systems</a> at CU Boulder.
+            Previously I was a Software Engineer at <a style={{ textDecoration: 'underline' }} href="https://www.oracle.com/industries/food-beverage/restaurant-pos-systems/restaurant-analytics/">Oracle</a>,
+            Software Engineer Intern at <a style={{ textDecoration: 'underline' }} href="https://aws.amazon.com/rds/aurora/">AWS</a> and <a style={{ textDecoration: 'underline' }} href="https://cloud.google.com/channel/docs/rebilling/rebilling-overview">Google</a>.
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
-          <Social fontSize=".95rem" padding=".3rem 1.25rem" width="auto" withIcon/>
+          <Social fontSize=".95rem" padding=".3rem 1.25rem" width="auto" withIcon />
         </motion.div>
       </StyledContentWrapper>
     </StyledSection>
